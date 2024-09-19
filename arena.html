@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bees Arena Coming Soon</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bagel+Fat+One&family=Baloo+Thambi+2:wght@400..800&family=Bungee+Inline&family=Rubik+Bubbles&display=swap');
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+            font-family: Arial, sans-serif;
+            color: #e49158;
+            text-align: center;
+        }
+
+        .loader {
+            border: 16px solid #000; /* Black border */
+            border-top: 16px solid #e49158; /* Bee-inspired color */
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            animation: spin 2s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .content {
+            position: absolute;
+            top: 60%;
+        }
+
+        h1 {
+            font-size: 24px;
+            letter-spacing: 2px;
+        }
+
+        /* Button container */
+span a {
+    display: inline-block;
+    background-color: #e49158; /* Bee-themed color */
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Button text */
+span a p {
+    color: #fff;
+    font-family: "Bungee Inline", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Icon inside the button */
+span a p i {
+    margin-left: 10px;
+}
+
+/* Hover effect */
+span a:hover {
+    background-color: #c97847; /* Slightly darker shade on hover */
+}
+
+    </style>
+</head>
+<body>
+    <div class="loader"></div>
+    <div class="content">
+        <h1>BEES ARENA COMING SOON</h1>
+      <span>
+        <a href="index.html" target="_blank">
+            <p style="color: #fff;">Visit ALPHCOL <i class="fa-solid fa-square-caret-right"></i></p>
+           </a>
+      </span>
+    </div>
+</body>
+</html>
