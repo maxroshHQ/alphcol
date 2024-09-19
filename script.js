@@ -64,3 +64,20 @@ document.getElementById("trending-btn").addEventListener("click", function (even
     // Clean up the temporary element after the click
     document.body.removeChild(link);
 });
+
+function copyContractAddress() {
+    const contractAddress = "wqPPQmFVh8NqYUKm7Gf4Y4xHkb3fGpgMt9Q6gC7SAnb1";
+    
+    // Create a temporary input element
+    const tempInput = document.createElement("input");
+    tempInput.value = contractAddress;
+    
+    // Append it to the document, copy the text, and remove the input
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    document.execCommand("copy");
+    document.body.removeChild(tempInput);
+    
+    // Optionally, you can show a confirmation (e.g., alert)
+    alert("Contract address copied!");
+}
